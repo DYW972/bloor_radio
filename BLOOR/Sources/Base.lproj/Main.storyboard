@@ -132,7 +132,80 @@
                     <view key="view" contentMode="scaleToFill" id="3f4-OE-DS0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INSCRIPTION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpj-XN-QxP">
+                                <rect key="frame" x="123.5" y="20" width="167" height="29"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Eg3-xV-RYP">
+                                <rect key="frame" x="29.5" y="308" width="355" height="226"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nom d'utilisateur" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fe0-w6-h1f">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="355" id="7rd-pF-c1d"/>
+                                            <constraint firstAttribute="height" constant="34" id="bbE-eU-W4E"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adresse mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cyB-fI-crr">
+                                        <rect key="frame" x="0.0" y="64" width="355" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="ZQ7-Qu-30N"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="355" id="zGe-jM-hK9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mot de passe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EeL-6a-piG">
+                                        <rect key="frame" x="0.0" y="128" width="355" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="Dl9-l8-GcU"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="355" id="How-42-dNO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmer le mot de passe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Da-jX-6dj">
+                                        <rect key="frame" x="0.0" y="192" width="355" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="355" id="8V1-5x-LiS"/>
+                                            <constraint firstAttribute="height" constant="34" id="K8d-y3-Jeg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHY-Rq-WEn">
+                                <rect key="frame" x="137" y="738" width="140" height="40"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
+                                <state key="normal" title="S'INSCRIRE">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EYn-Ge-GjB">
+                                <rect key="frame" x="142" y="113" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="Nff-Zp-KQa"/>
+                                    <constraint firstAttribute="width" constant="130" id="hlI-V4-Xcx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="KHY-Rq-WEn" firstAttribute="centerX" secondItem="3f4-OE-DS0" secondAttribute="centerX" id="9yN-oc-iZe"/>
+                            <constraint firstItem="cpj-XN-QxP" firstAttribute="centerX" secondItem="3f4-OE-DS0" secondAttribute="centerX" id="A7O-rM-UYA"/>
+                            <constraint firstItem="6fw-AR-me5" firstAttribute="bottom" secondItem="KHY-Rq-WEn" secondAttribute="bottom" constant="30" id="CWc-5K-H3w"/>
+                            <constraint firstItem="EYn-Ge-GjB" firstAttribute="centerX" secondItem="3f4-OE-DS0" secondAttribute="centerX" id="G8l-Sg-LUx"/>
+                            <constraint firstItem="EYn-Ge-GjB" firstAttribute="top" secondItem="cpj-XN-QxP" secondAttribute="bottom" constant="64" id="QrU-Aq-7s5"/>
+                            <constraint firstItem="Eg3-xV-RYP" firstAttribute="centerX" secondItem="3f4-OE-DS0" secondAttribute="centerX" id="TD8-EU-uT1"/>
+                            <constraint firstItem="Eg3-xV-RYP" firstAttribute="centerY" secondItem="3f4-OE-DS0" secondAttribute="centerY" id="U1J-aS-XXn"/>
+                            <constraint firstItem="cpj-XN-QxP" firstAttribute="top" secondItem="6fw-AR-me5" secondAttribute="top" constant="20" id="XBf-Xw-J9a"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6fw-AR-me5"/>
                     </view>
                     <navigationItem key="navigationItem" id="983-ya-e1E"/>
