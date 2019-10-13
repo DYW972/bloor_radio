@@ -1,0 +1,6 @@
+framework module Pods_BLOOR {
+  umbrella header "Pods-BLOOR-umbrella.h"
+
+  export *
+  module * { export * }
+}

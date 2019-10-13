@@ -1,0 +1,6 @@
+framework module Pods_BLOOR_BLOORUITests {
+  umbrella header "Pods-BLOOR-BLOORUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
