@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2C01C92AD7A3160DC2D923C5 /* Pods_BLOOR_BLOORUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F32AE6470AACD1214F5CDA /* Pods_BLOOR_BLOORUITests.framework */; };
 		4EB299C3CCD38C7642F014CD /* Pods_BLOORTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF4337143CEA47657A6A5F6 /* Pods_BLOORTests.framework */; };
+		9102438A2353DCBE008FA9DF /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910243892353DCBE008FA9DF /* LogInViewController.swift */; };
+		9102438C2353DCCE008FA9DF /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9102438B2353DCCE008FA9DF /* LogInViewModel.swift */; };
 		912C0EFD2351F8E800AF51C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C0EFC2351F8E800AF51C7 /* AppDelegate.swift */; };
 		912C0EFF2351F8E800AF51C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C0EFE2351F8E800AF51C7 /* SceneDelegate.swift */; };
 		912C0F042351F8E800AF51C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 912C0F022351F8E800AF51C7 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 		912C0F302351F99C00AF51C7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C0F2F2351F99C00AF51C7 /* HomeViewController.swift */; };
 		912C0F322351FCA000AF51C7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C0F312351FCA000AF51C7 /* HomeViewModel.swift */; };
 		912C0F3423520A0400AF51C7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 912C0F3323520A0400AF51C7 /* GoogleService-Info.plist */; };
+		91EE5ADA2353DAF3004C8F0F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EE5AD92353DAF3004C8F0F /* SignUpViewController.swift */; };
+		91EE5ADC2353DB13004C8F0F /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EE5ADB2353DB13004C8F0F /* SignUpViewModel.swift */; };
 		BE649DF26A52C7ACC10057D3 /* Pods_BLOOR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9798A1673FF3ED637D11931 /* Pods_BLOOR.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +46,8 @@
 /* Begin PBXFileReference section */
 		4D8AE7F0B53833F8493A8BEA /* Pods-BLOOR-BLOORUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLOOR-BLOORUITests.debug.xcconfig"; path = "Target Support Files/Pods-BLOOR-BLOORUITests/Pods-BLOOR-BLOORUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7881E55D02F485311F28403E /* Pods-BLOORTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLOORTests.debug.xcconfig"; path = "Target Support Files/Pods-BLOORTests/Pods-BLOORTests.debug.xcconfig"; sourceTree = "<group>"; };
+		910243892353DCBE008FA9DF /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		9102438B2353DCCE008FA9DF /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
 		912C0EF92351F8E800AF51C7 /* BLOOR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLOOR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		912C0EFC2351F8E800AF51C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		912C0EFE2351F8E800AF51C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +64,8 @@
 		912C0F2F2351F99C00AF51C7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		912C0F312351FCA000AF51C7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		912C0F3323520A0400AF51C7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		91EE5AD92353DAF3004C8F0F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		91EE5ADB2353DB13004C8F0F /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		9D47C3C5EE903CD94071E448 /* Pods-BLOOR-BLOORUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLOOR-BLOORUITests.release.xcconfig"; path = "Target Support Files/Pods-BLOOR-BLOORUITests/Pods-BLOOR-BLOORUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D04408A573F8B849F564C2AF /* Pods-BLOOR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLOOR.release.xcconfig"; path = "Target Support Files/Pods-BLOOR/Pods-BLOOR.release.xcconfig"; sourceTree = "<group>"; };
 		D8F32AE6470AACD1214F5CDA /* Pods_BLOOR_BLOORUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLOOR_BLOORUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +111,24 @@
 				DCF4337143CEA47657A6A5F6 /* Pods_BLOORTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9102438D2353DF30008FA9DF /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				910243892353DCBE008FA9DF /* LogInViewController.swift */,
+				9102438B2353DCCE008FA9DF /* LogInViewModel.swift */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		9102438E2353DF49008FA9DF /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				91EE5AD92353DAF3004C8F0F /* SignUpViewController.swift */,
+				91EE5ADB2353DB13004C8F0F /* SignUpViewModel.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 		912C0EF02351F8E800AF51C7 = {
@@ -181,6 +207,8 @@
 			children = (
 				912C0F2F2351F99C00AF51C7 /* HomeViewController.swift */,
 				912C0F312351FCA000AF51C7 /* HomeViewModel.swift */,
+				9102438D2353DF30008FA9DF /* LogIn */,
+				9102438E2353DF49008FA9DF /* SignUp */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -195,7 +223,6 @@
 				7881E55D02F485311F28403E /* Pods-BLOORTests.debug.xcconfig */,
 				EE09213B05705EEC20D9CDBA /* Pods-BLOORTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -442,7 +469,11 @@
 				912C0EFD2351F8E800AF51C7 /* AppDelegate.swift in Sources */,
 				912C0EFF2351F8E800AF51C7 /* SceneDelegate.swift in Sources */,
 				912C0F302351F99C00AF51C7 /* HomeViewController.swift in Sources */,
+				9102438A2353DCBE008FA9DF /* LogInViewController.swift in Sources */,
+				9102438C2353DCCE008FA9DF /* LogInViewModel.swift in Sources */,
 				912C0F322351FCA000AF51C7 /* HomeViewModel.swift in Sources */,
+				91EE5ADC2353DB13004C8F0F /* SignUpViewModel.swift in Sources */,
+				91EE5ADA2353DAF3004C8F0F /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--Log In View Controler-->
         <scene sceneID="BcP-jq-swX">
             <objects>
-                <viewController id="gMW-Zu-F31" customClass="HomeViewController" customModule="BLOOR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gMW-Zu-F31" customClass="LogInViewControler" customModule="BLOOR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GzP-aM-5it">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,36 +31,36 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="didPressLogInButton:" destination="gMW-Zu-F31" eventType="touchUpInside" id="k0a-Ow-9Tj"/>
+                                    <action selector="didPressLogInButton:" destination="gMW-Zu-F31" eventType="touchUpInside" id="OY8-i1-6Co"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="adA-mB-36l">
                                 <rect key="frame" x="29.5" y="399" width="355" height="98"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Adresse mail" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DcA-QY-DNa">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adresse mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DcA-QY-DNa">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="TIY-mc-3NR"/>
-                                            <constraint firstAttribute="width" constant="355" id="fuW-gv-mXI"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="355" id="fuW-gv-mXI"/>
                                         </constraints>
-                                        <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="didPressMailTextField:" destination="gMW-Zu-F31" eventType="editingDidEnd" id="kwe-lB-0dm"/>
+                                            <action selector="didPressMailTextField:" destination="gMW-Zu-F31" eventType="editingDidEnd" id="ywJ-5u-72a"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mot de passe" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w4K-Eh-xdZ">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mot de passe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w4K-Eh-xdZ">
                                         <rect key="frame" x="0.0" y="64" width="355" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="OZg-RE-N8z"/>
-                                            <constraint firstAttribute="width" constant="355" id="frU-pJ-MNt"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="355" id="frU-pJ-MNt"/>
                                         </constraints>
-                                        <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="didPressPasswordTextField:" destination="gMW-Zu-F31" eventType="editingDidEnd" id="zHd-VJ-CGu"/>
+                                            <action selector="didPressPasswordTextField:" destination="gMW-Zu-F31" eventType="editingDidEnd" id="HlX-3d-Dr0"/>
                                         </connections>
                                     </textField>
                                 </subviews>
@@ -86,7 +86,8 @@
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="12"/>
                                         <state key="normal" title="INSCRIPTION"/>
                                         <connections>
-                                            <action selector="didPressSignUpButton:" destination="gMW-Zu-F31" eventType="touchUpInside" id="gZR-db-JFC"/>
+                                            <action selector="didPressSignUpButton:" destination="gMW-Zu-F31" eventType="touchUpInside" id="ZXm-Ol-D7H"/>
+                                            <segue destination="7SH-Lf-YSj" kind="show" id="VxK-lj-bdv"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -108,18 +109,34 @@
                         <viewLayoutGuide key="safeArea" id="pvK-jO-hIA"/>
                     </view>
                     <connections>
-                        <outlet property="bloorLogoImageView" destination="sjY-cd-T4T" id="Hjl-NX-e74"/>
-                        <outlet property="bloorRadioLabel" destination="wdG-AS-anr" id="bBl-ZR-QrS"/>
-                        <outlet property="logInbutton" destination="hBw-5A-aTX" id="3zc-Ha-DWu"/>
-                        <outlet property="mailTextField" destination="DcA-QY-DNa" id="7ZQ-q3-LXw"/>
-                        <outlet property="passwordTextField" destination="w4K-Eh-xdZ" id="bFs-7W-kIW"/>
-                        <outlet property="signUpButton" destination="yNe-Y8-Hpx" id="QiT-9M-Xwi"/>
-                        <outlet property="youDontHaveAnAccountLabel" destination="TfF-8X-K3x" id="sfV-8q-JPb"/>
+                        <outlet property="bloorLogoImageView" destination="sjY-cd-T4T" id="dQP-Yr-IFu"/>
+                        <outlet property="bloorRadioLabel" destination="wdG-AS-anr" id="bwR-pz-Mrr"/>
+                        <outlet property="logInbutton" destination="hBw-5A-aTX" id="wu2-G1-w0x"/>
+                        <outlet property="mailTextField" destination="DcA-QY-DNa" id="D9K-n4-BEB"/>
+                        <outlet property="passwordTextField" destination="w4K-Eh-xdZ" id="BRC-Ll-cUB"/>
+                        <outlet property="signUpButton" destination="yNe-Y8-Hpx" id="Sxa-ye-BIk"/>
+                        <outlet property="youDontHaveAnAccountLabel" destination="TfF-8X-K3x" id="2xI-1n-9C5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vBS-Ra-WNg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-10.144927536231885" y="18.75"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="usi-Fa-Lkh">
+            <objects>
+                <viewController id="7SH-Lf-YSj" customClass="SignUpViewController" customModule="BLOOR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3f4-OE-DS0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6fw-AR-me5"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="983-ya-e1E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o4T-gO-5ah" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="787" y="19"/>
         </scene>
     </scenes>
     <resources>
