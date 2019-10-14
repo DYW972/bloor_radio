@@ -10,4 +10,11 @@ import Foundation
 
 final class SignUpViewModel {
     
+     // MARK: - Outputs
+      
+     
+      
+      // MARK: - Inputs
+      
+
 }

@@ -13,14 +13,14 @@ final class LogInViewControler: UIViewController {
     
     // MARK: - Outlets
     
-       @IBOutlet weak var bloorLogoImageView: UIImageView!
-       @IBOutlet weak var bloorRadioLabel: UILabel!
-       @IBOutlet weak var mailTextField: UITextField!
-       @IBOutlet weak var passwordTextField: UITextField!
+       @IBOutlet private weak var bloorLogoImageView: UIImageView!
+       @IBOutlet private weak var bloorRadioLabel: UILabel!
+       @IBOutlet private weak var mailTextField: UITextField!
+       @IBOutlet private weak var passwordTextField: UITextField!
        
-       @IBOutlet weak var youDontHaveAnAccountLabel: UILabel!
+       @IBOutlet private weak var youDontHaveAnAccountLabel: UILabel!
        @IBOutlet private weak var signUpButton: UIButton!
-       @IBOutlet weak var logInbutton: UIButton!
+       @IBOutlet private weak var logInbutton: UIButton!
     
     // MARK: - Private Properties
     
@@ -39,7 +39,7 @@ final class LogInViewControler: UIViewController {
         viewModel.mailText = { [weak self] text in
             self?.mailTextField.text = text
         }
-        
+    
         viewModel.youDontHaveAnAccountText = { [weak self] text in
             self?.youDontHaveAnAccountLabel.text = text
         }
@@ -55,18 +55,18 @@ final class LogInViewControler: UIViewController {
     
     // MARK: - Actions
     
-    @IBAction func didPressMailTextField(_ sender: UITextField) {
+    @IBAction private func didPressMailTextField(_ sender: UITextField) {
            viewModel.didPressMailText()
            mailTextField.textColor = UIColor(named: "Black")
        }
        
-       @IBAction func didPressPasswordTextField(_ sender: UITextField) {
+       @IBAction private func didPressPasswordTextField(_ sender: UITextField) {
        }
        
-       @IBAction func didPressSignUpButton(_ sender: UIButton) {
+       @IBAction private func didPressSignUpButton(_ sender: UIButton) {
        }
        
-       @IBAction func didPressLogInButton(_ sender: UIButton) {
+       @IBAction private func didPressLogInButton(_ sender: UIButton) {
            viewModel.didPressLogIn()
            self.ref = Database.database().reference()
            self.ref.child("users").child("Name").setValue(["username": self.mailTextField.text])
