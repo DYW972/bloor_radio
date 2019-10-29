@@ -7,27 +7,51 @@
 //
 
 import Foundation
+import FirebaseDatabase
+import FirebaseAuth
 
 final class LogInViewModel {
+
+    enum NextScreen {
+        case alert(alertConfiguration: AlertConfiguration)
+    }
+    
+    private var ref: DatabaseReference!
     
     // MARK: - Outputs
     
-    var mailText: ((String) -> Void)?
-    var PasswordText: ((String) -> Void)?
-    var youDontHaveAnAccountText: ((String) -> Void)?
-    var signUpText: ((String) -> Void)?
-    var logInText: ((String) -> Void)?
+    var navigateTo: ((NextScreen) -> Void)?
+
+    // MARK: - Private Properties
+    
+    // MARK: - Helpers
+    
+    func autorization() {
+        navigateTo?(.alert(alertConfiguration: AlertConfiguration(title: "Attention", message: "Votre adresse mail ou votre mot de passe n'est pas valide", okTitle: "D'accord")))
+    }
+    
+    
+    func connectUser(mail: String?, password: String?) {
+        
+        if let mailInput = mail, let passwordInput = password {
+            
+            Auth.auth().signIn(withEmail: mailInput, password: passwordInput) { user, error in
+
+                if error == nil && user != nil {
+                    print("Vous etes conecté")
+                } else {
+                    print("Erreur")
+                }
+            }
+        }
+    }
     
     // MARK: - Inputs
     
     func viewDidLoad() {
-        self.youDontHaveAnAccountText?("Vous n'avez pas de compte ?")
-        self.signUpText?("S'INSCRIRE")
-        self.logInText?("SE CONNECTER")
     }
     
     func didPressMailText() {
-        self.mailText?("")
     }
     
     func didPressPasswordText() {

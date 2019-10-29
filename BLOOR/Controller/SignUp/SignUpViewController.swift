@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import FirebaseAuth
+
 
 final class SignUpViewController: UIViewController {
     
@@ -23,6 +23,7 @@ final class SignUpViewController: UIViewController {
             usernameTextField.layer.borderColor = UIColor.gray.cgColor
         }
     }
+    
     @IBOutlet private weak var mailTextField: UITextField! {
         didSet {
             mailTextField.layer.borderWidth = 0.5
@@ -30,6 +31,7 @@ final class SignUpViewController: UIViewController {
             mailTextField.layer.borderColor = UIColor.gray.cgColor
         }
     }
+    
     @IBOutlet private weak var passwordTextField: UITextField! {
         didSet {
             passwordTextField.layer.borderWidth = 0.5
@@ -37,6 +39,7 @@ final class SignUpViewController: UIViewController {
             passwordTextField.layer.borderColor = UIColor.gray.cgColor
         }
     }
+    
     @IBOutlet private weak var confirmPasswordTextField: UITextField! {
         didSet {
             confirmPasswordTextField.layer.borderWidth = 0.5
@@ -44,6 +47,7 @@ final class SignUpViewController: UIViewController {
             confirmPasswordTextField.layer.borderColor = UIColor.gray.cgColor
         }
     }
+    
     @IBOutlet private weak var signUpButton: UIButton!
 
     // MARK: - Private Properties
@@ -54,63 +58,49 @@ final class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bind(to: viewModel)
+        viewModel.viewDidLoad()
+    }
+    
+    private func bind(to viewModel: SignUpViewModel) {
+    
+        viewModel.navigateTo = { [weak self] screen in
+            switch screen {
+            case .alert(alertConfiguration: let configuration):
+                self?.displayAlert(with: configuration)
+            }
+        }
     }
     
     // MARK: - Helpers
     
-    private func allFieldsAreFilled() {
+    private func displayAlert(with configuration: AlertConfiguration) {
+        let alertVC = UIAlertController(title: configuration.title,
+                                        message: configuration.message,
+                                        preferredStyle: .alert)
         
-        if let usernameInput = self.usernameTextField.text, let mailInput = self.mailTextField.text, let passwordInput = self.passwordTextField.text, let confirmPasswordInput = self.confirmPasswordTextField.text {
-            
-            let username = usernameInput
-            let mail = mailInput
-            let password = passwordInput
-            let confimPassword = confirmPasswordInput
-            
-            if username.isEmpty || mail.isEmpty || password.isEmpty || confimPassword.isEmpty {
-                fieldsAlert(message: "Tous les champs doivent être remplis")
-            } else {
-                registerNewUser()
-            }
-        }
-    }
-    
-    private func fieldsAlert(message: String) {
-        let alertVC = UIAlertController(title: "Attention", message: message, preferredStyle: .alert)
-        alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        alertVC.addAction(UIAlertAction(title: configuration.okTitle, style: .cancel, handler: nil))
         self.present(alertVC, animated: true, completion: nil)
     }
     
-    private func passwordIsConfirmed() {
-        if let passwordInput = self.passwordTextField, let confirmPasswordInput = self.confirmPasswordTextField {
-            let password = passwordInput
-            let confirmPassword = confirmPasswordInput
-            
-            if confirmPassword.text == password.text {
-                confirmPasswordTextField.layer.borderColor = UIColor.green.cgColor
+    private func passwordIsValid(password: String?, confirmPassword: String?) {
+        
+        if let passwordInput = password, let confirmPasswordInput = confirmPassword {
+
+            if passwordInput.count < 6 {
+                passwordTextField.layer.borderColor = UIColor.red.cgColor
             } else {
-                let myColor = UIColor.red
-                confirmPassword.layer.borderColor = myColor.cgColor
+                passwordTextField.layer.borderColor = UIColor.green.cgColor
+            }
+        
+            if confirmPasswordInput != passwordInput {
+                confirmPasswordTextField.layer.borderColor = UIColor.red.cgColor
+            } else {
+                confirmPasswordTextField.layer.borderColor = UIColor.green.cgColor
             }
         }
     }
     
-    private func registerNewUser() {
-        var email: String
-        var password: String
-        
-        if let mailInput = self.mailTextField.text, let passwordInput = self.passwordTextField.text {
-            email = mailInput
-            password = passwordInput
-            
-            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-            }
-            
-        } else {
-            email = ""
-            password = ""
-        }
-    }
     
     // MARK: - Actions
     
@@ -118,24 +108,24 @@ final class SignUpViewController: UIViewController {
         
     }
     
-    @IBAction private func didPressUsernameTextField(_ sender: UITextField) {
+    @IBAction func didPressUsernameTextField(_ sender: Any) {
         
     }
     
-    @IBAction private func didPressMailTextField(_ sender: UITextField) {
-    
+    @IBAction func didPressMailTextField(_ sender: Any) {
+        
     }
     
-    @IBAction private func didPressPasswordTextField(_ sender: UITextField) {
-    
+    @IBAction func didPressPasswordTextField(_ sender: Any) {
+        passwordIsValid(password: passwordTextField.text, confirmPassword: confirmPasswordTextField.text)
     }
     
     @IBAction func didPressConfirmPasswordTextField(_ sender: Any) {
-        passwordIsConfirmed()
+        passwordIsValid(password: passwordTextField.text, confirmPassword: confirmPasswordTextField.text)
     }
     
     
     @IBAction private func didPressSignUpButton(_ sender: UIButton) {
-        allFieldsAreFilled()
+        viewModel.allFieldAreFilled(username: usernameTextField.text, mail: mailTextField.text, password: passwordTextField.text, confirmPassword: confirmPasswordTextField.text)
     }
 }
