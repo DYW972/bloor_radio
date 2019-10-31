@@ -1,0 +1,15 @@
+
+/* Class = "UITabBarItem"; title = "Abonnements"; ObjectID = "CYc-eT-atN"; */
+"CYc-eT-atN.title" = "Abonnements";
+
+/* Class = "UITabBarItem"; title = "Bibliotèque"; ObjectID = "DV8-Qg-Gx3"; */
+"DV8-Qg-Gx3.title" = "Bibliotèque";
+
+/* Class = "UITabBarItem"; title = "Tendances"; ObjectID = "bD0-R2-7Nv"; */
+"bD0-R2-7Nv.title" = "Tendances";
+
+/* Class = "UITabBarItem"; title = "Acceuil"; ObjectID = "hFy-qn-Z7f"; */
+"hFy-qn-Z7f.title" = "Acceuil";
+
+/* Class = "UITabBarItem"; title = "Live"; ObjectID = "pEA-o5-u7e"; */
+"pEA-o5-u7e.title" = "Live";

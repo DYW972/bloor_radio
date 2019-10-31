@@ -23,6 +23,7 @@
 		912C0F3423520A0400AF51C7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 912C0F3323520A0400AF51C7 /* GoogleService-Info.plist */; };
 		91EE5ADA2353DAF3004C8F0F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EE5AD92353DAF3004C8F0F /* SignUpViewController.swift */; };
 		91EE5ADC2353DB13004C8F0F /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EE5ADB2353DB13004C8F0F /* SignUpViewModel.swift */; };
+		91F27714236B33A100478546 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F27712236B33A100478546 /* Menu.storyboard */; };
 		BE649DF26A52C7ACC10057D3 /* Pods_BLOOR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9798A1673FF3ED637D11931 /* Pods_BLOOR.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		912C0F3323520A0400AF51C7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		91EE5AD92353DAF3004C8F0F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		91EE5ADB2353DB13004C8F0F /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		91F27713236B33A100478546 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = BLOOR/Sources/Base.lproj/Menu.storyboard; sourceTree = "<group>"; };
 		9D47C3C5EE903CD94071E448 /* Pods-BLOOR-BLOORUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLOOR-BLOORUITests.release.xcconfig"; path = "Target Support Files/Pods-BLOOR-BLOORUITests/Pods-BLOOR-BLOORUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D04408A573F8B849F564C2AF /* Pods-BLOOR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLOOR.release.xcconfig"; path = "Target Support Files/Pods-BLOOR/Pods-BLOOR.release.xcconfig"; sourceTree = "<group>"; };
 		D8F32AE6470AACD1214F5CDA /* Pods_BLOOR_BLOORUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLOOR_BLOORUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,6 +199,7 @@
 			children = (
 				912C0EFC2351F8E800AF51C7 /* AppDelegate.swift */,
 				912C0EFE2351F8E800AF51C7 /* SceneDelegate.swift */,
+				91F27712236B33A100478546 /* Menu.storyboard */,
 				912C0F022351F8E800AF51C7 /* Main.storyboard */,
 			);
 			path = Sources;
@@ -335,6 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91F27714236B33A100478546 /* Menu.storyboard in Resources */,
 				912C0F092351F8E900AF51C7 /* LaunchScreen.storyboard in Resources */,
 				912C0F3423520A0400AF51C7 /* GoogleService-Info.plist in Resources */,
 				912C0F062351F8E900AF51C7 /* Assets.xcassets in Resources */,
@@ -525,6 +529,14 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		91F27712236B33A100478546 /* Menu.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91F27713236B33A100478546 /* Base */,
+			);
+			name = Menu.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -584,6 +596,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -637,6 +650,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
