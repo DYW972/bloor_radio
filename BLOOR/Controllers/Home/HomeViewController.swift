@@ -13,9 +13,11 @@ final class HomeViewController: UIViewController {
     
     // MARK: - Outlets
     
-    @IBOutlet weak var micItemButton: UIBarButtonItem!
-    @IBOutlet weak var searchItemButton: UIBarButtonItem!
-    @IBOutlet weak var profileItemButton: UIBarButtonItem!
+    @IBOutlet private weak var logoImageButton: UIButton!
+    @IBOutlet private weak var micItemButton: UIBarButtonItem!
+    @IBOutlet private weak var searchItemButton: UIBarButtonItem!
+    @IBOutlet private weak var profileItemButton: UIBarButtonItem!
+    @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Private Properties
     
@@ -24,8 +26,8 @@ final class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         addNavigationBarImage()
+        tableView.dataSource = self
     }
     
     // MARK: - Helpers
@@ -44,11 +46,12 @@ final class HomeViewController: UIViewController {
         guard let imageSizeWidth = image?.size.width else { return }
         guard let imageSizeHeight = image?.size.height else { return }
         
-        let bannerX = bannerW / 2 - imageSizeWidth / 2
-        let bannerY = bannerH / 2 - imageSizeHeight / 2
+        let bannerX = bannerW - imageSizeWidth / 2
+        let bannerY = bannerH - imageSizeHeight / 2
         
         imageView.frame = CGRect(x: bannerX, y: bannerY, width: bannerW, height: bannerH)
         imageView.contentMode = .scaleAspectFit
+
         navigationItem.titleView = imageView
     }
     // MARK: - Actions
@@ -56,9 +59,22 @@ final class HomeViewController: UIViewController {
     @IBAction func didPressMicItemButton(_ sender: UIBarButtonItem) {
     }
     @IBAction func didPressSearchItemButton(_ sender: UIBarButtonItem) {
+        
     }
+    
     @IBAction func didPressProfileItemButton(_ sender: UIBarButtonItem) {
     }
     
 }
 
+extension HomeViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 100
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        cell.textLabel?.text = "\(indexPath.row)"
+        cell.backgroundColor = UIColor.white
+        return cell
+    }
+}
