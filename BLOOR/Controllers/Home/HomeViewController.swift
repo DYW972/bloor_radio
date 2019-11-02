@@ -26,8 +26,7 @@ final class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addNavigationBarImage()
-        tableView.dataSource = self
+//        addNavigationBarImage()
     }
     
     // MARK: - Helpers

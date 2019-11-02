@@ -11,6 +11,10 @@
 		4EB299C3CCD38C7642F014CD /* Pods_BLOORTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF4337143CEA47657A6A5F6 /* Pods_BLOORTests.framework */; };
 		9102438A2353DCBE008FA9DF /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910243892353DCBE008FA9DF /* LogInViewController.swift */; };
 		9102438C2353DCCE008FA9DF /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9102438B2353DCCE008FA9DF /* LogInViewModel.swift */; };
+		911E011A236DD01800448920 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911E0119236DD01800448920 /* SearchViewController.swift */; };
+		911E011C236DD04600448920 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911E011B236DD04600448920 /* SearchViewModel.swift */; };
+		911E011E236DD05700448920 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911E011D236DD05700448920 /* AccountViewController.swift */; };
+		911E0120236DD06400448920 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911E011F236DD06400448920 /* AccountViewModel.swift */; };
 		912C0EFD2351F8E800AF51C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C0EFC2351F8E800AF51C7 /* AppDelegate.swift */; };
 		912C0EFF2351F8E800AF51C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912C0EFE2351F8E800AF51C7 /* SceneDelegate.swift */; };
 		912C0F042351F8E800AF51C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 912C0F022351F8E800AF51C7 /* Main.storyboard */; };
@@ -62,6 +66,10 @@
 		7881E55D02F485311F28403E /* Pods-BLOORTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLOORTests.debug.xcconfig"; path = "Target Support Files/Pods-BLOORTests/Pods-BLOORTests.debug.xcconfig"; sourceTree = "<group>"; };
 		910243892353DCBE008FA9DF /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		9102438B2353DCCE008FA9DF /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
+		911E0119236DD01800448920 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		911E011B236DD04600448920 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		911E011D236DD05700448920 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		911E011F236DD06400448920 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		912C0EF92351F8E800AF51C7 /* BLOOR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLOOR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		912C0EFC2351F8E800AF51C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		912C0EFE2351F8E800AF51C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +167,24 @@
 			path = SignUp;
 			sourceTree = "<group>";
 		};
+		911E0117236DCFC900448920 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				911E0119236DD01800448920 /* SearchViewController.swift */,
+				911E011B236DD04600448920 /* SearchViewModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		911E0118236DCFED00448920 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				911E011D236DD05700448920 /* AccountViewController.swift */,
+				911E011F236DD06400448920 /* AccountViewModel.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
 		912C0EF02351F8E800AF51C7 = {
 			isa = PBXGroup;
 			children = (
@@ -243,7 +269,7 @@
 				9163F40D236C92FC002576FF /* TopRated */,
 				9163F40E236C9310002576FF /* Live */,
 				9163F40F236C932B002576FF /* Subscriptions */,
-				9163F410236C9348002576FF /* library */,
+				9163F410236C9348002576FF /* Library */,
 				9102438D2353DF30008FA9DF /* LogIn */,
 				9102438E2353DF49008FA9DF /* SignUp */,
 			);
@@ -255,6 +281,8 @@
 			children = (
 				912C0F2F2351F99C00AF51C7 /* HomeViewController.swift */,
 				912C0F312351FCA000AF51C7 /* HomeViewModel.swift */,
+				911E0117236DCFC900448920 /* Search */,
+				911E0118236DCFED00448920 /* Account */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -286,13 +314,13 @@
 			path = Subscriptions;
 			sourceTree = "<group>";
 		};
-		9163F410236C9348002576FF /* library */ = {
+		9163F410236C9348002576FF /* Library */ = {
 			isa = PBXGroup;
 			children = (
 				9163F41D236C9483002576FF /* LibraryViewController.swift */,
 				9163F41F236C9494002576FF /* LibraryViewModel.swift */,
 			);
-			path = library;
+			path = Library;
 			sourceTree = "<group>";
 		};
 		CD8108D2ABB2045FC2F2032D /* Pods */ = {
@@ -557,13 +585,17 @@
 				912C0EFD2351F8E800AF51C7 /* AppDelegate.swift in Sources */,
 				9163F41E236C9483002576FF /* LibraryViewController.swift in Sources */,
 				9163F420236C9494002576FF /* LibraryViewModel.swift in Sources */,
+				911E011A236DD01800448920 /* SearchViewController.swift in Sources */,
 				912C0EFF2351F8E800AF51C7 /* SceneDelegate.swift in Sources */,
 				912C0F302351F99C00AF51C7 /* HomeViewController.swift in Sources */,
+				911E0120236DD06400448920 /* AccountViewModel.swift in Sources */,
+				911E011C236DD04600448920 /* SearchViewModel.swift in Sources */,
 				9102438A2353DCBE008FA9DF /* LogInViewController.swift in Sources */,
 				9102438C2353DCCE008FA9DF /* LogInViewModel.swift in Sources */,
 				912C0F322351FCA000AF51C7 /* HomeViewModel.swift in Sources */,
 				9163F418236C9433002576FF /* LiveViewModel.swift in Sources */,
 				9163F41C236C9461002576FF /* SubscriptionsViewModel.swift in Sources */,
+				911E011E236DD05700448920 /* AccountViewController.swift in Sources */,
 				91EE5ADC2353DB13004C8F0F /* SignUpViewModel.swift in Sources */,
 				91EE5ADA2353DAF3004C8F0F /* SignUpViewController.swift in Sources */,
 				9163F412236C93AF002576FF /* TopRatedViewController.swift in Sources */,
