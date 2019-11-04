@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u6b-FC-OO6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -11,7 +12,7 @@
             <objects>
                 <viewController id="21B-gL-IQJ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wI9-ze-kdM">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="2AU-9k-6jI"/>
@@ -20,9 +21,15 @@
                         <rightBarButtonItems>
                             <barButtonItem image="person.circle.fill" catalog="system" style="plain" id="tYq-1I-ZbV">
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="cmq-BL-BUk" kind="presentation" modalPresentationStyle="fullScreen" id="DYQ-zS-dKG"/>
+                                </connections>
                             </barButtonItem>
                             <barButtonItem image="magnifyingglass" catalog="system" style="plain" id="wb1-gx-pDN">
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="BaL-wG-XjK" kind="presentation" modalPresentationStyle="fullScreen" id="5SC-yn-Jmz"/>
+                                </connections>
                             </barButtonItem>
                             <barButtonItem image="mic.fill" catalog="system" style="plain" id="LSj-Ka-DMB">
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -33,6 +40,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Euh-kD-xNQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="412" y="2490"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="vGO-9p-Acr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" id="BaL-wG-XjK" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FDd-Ue-VAi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1142" y="2363"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="tx3-NM-y62">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Account" id="cmq-BL-BUk" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eVP-kb-d1c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1142" y="2456"/>
         </scene>
         <!--LIve-->
         <scene sceneID="6dN-2y-LtS">

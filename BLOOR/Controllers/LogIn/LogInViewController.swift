@@ -67,5 +67,6 @@ final class LogInViewControler: UIViewController {
        
        @IBAction private func didPressLogInButton(_ sender: UIButton) {
             viewModel.connectUser(mail: mailTextField.text, password: passwordTextField.text)
+        
        }
 }

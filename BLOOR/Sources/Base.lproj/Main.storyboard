@@ -35,7 +35,7 @@
                                 </state>
                                 <connections>
                                     <action selector="didPressLogInButton:" destination="gMW-Zu-F31" eventType="touchUpInside" id="OY8-i1-6Co"/>
-                                    <segue destination="reh-T3-QQC" kind="presentation" id="40s-ss-aVe"/>
+                                    <segue destination="reh-T3-QQC" kind="presentation" modalPresentationStyle="fullScreen" id="40s-ss-aVe"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="adA-mB-36l">
@@ -62,7 +62,7 @@
                                         </constraints>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         <connections>
                                             <action selector="didPressPasswordTextField:" destination="gMW-Zu-F31" eventType="editingDidEnd" id="HlX-3d-Dr0"/>
                                         </connections>
@@ -201,7 +201,7 @@
                                 </state>
                                 <connections>
                                     <action selector="didPressSignUpButton:" destination="7SH-Lf-YSj" eventType="touchUpInside" id="Kls-Jm-eTX"/>
-                                    <segue destination="reh-T3-QQC" kind="presentation" id="Z7O-m1-SoM"/>
+                                    <segue destination="reh-T3-QQC" kind="presentation" modalPresentationStyle="fullScreen" id="Z7O-m1-SoM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B99-sw-swr">
@@ -259,7 +259,9 @@
         <!--Menu-->
         <scene sceneID="bMO-Po-JSd">
             <objects>
-                <viewControllerPlaceholder storyboardName="Menu" id="reh-T3-QQC" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Menu" id="reh-T3-QQC" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="a1L-TD-LSc"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ryv-Md-Vxv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1162" y="310"/>

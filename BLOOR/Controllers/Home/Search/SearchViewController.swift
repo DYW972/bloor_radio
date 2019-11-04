@@ -15,13 +15,13 @@ final class SearchViewController: UIViewController {
 
     @IBOutlet weak var navigationBar: UINavigationItem!
     @IBOutlet weak var backButton: UIBarButtonItem!
-    
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - View life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        createSearchBar()
     }
     
     // MARK: - Helpers
@@ -37,7 +37,7 @@ final class SearchViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func didPressbackButton(_ sender: UIBarButtonItem) {
-        
+        dismiss(animated: true, completion: nil)
     }
 }
 

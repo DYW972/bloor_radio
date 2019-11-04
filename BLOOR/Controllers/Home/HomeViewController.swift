@@ -13,19 +13,21 @@ final class HomeViewController: UIViewController {
     
     // MARK: - Outlets
     
-    @IBOutlet private weak var logoImageButton: UIButton!
     @IBOutlet private weak var micItemButton: UIBarButtonItem!
     @IBOutlet private weak var searchItemButton: UIBarButtonItem!
     @IBOutlet private weak var profileItemButton: UIBarButtonItem!
+    
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Private Properties
     
-    
+    let videos: [Video] = Video.fetchVideo()
+        
     // MARK: - View life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.dataSource = self
 //        addNavigationBarImage()
     }
     
@@ -68,12 +70,12 @@ final class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
+        return 3
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = "\(indexPath.row)"
-        cell.backgroundColor = UIColor.white
+        let cell = tableView.dequeueReusableCell(withIdentifier: "VideoCell", for: indexPath) as! HomeTableViewCell
+        let video = videos[indexPath.row]
+        cell.video = video
         return cell
     }
 }
