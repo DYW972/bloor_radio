@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="K8o-wH-Gov">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="Gjf-EC-TuJ">
+            <objects>
+                <viewController id="7lx-xf-NvF" customClass="HomeViewController" customModule="BLOOR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V61-Mj-3KI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="242" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="guX-5o-1qT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VideoCell" rowHeight="242" id="sZp-ky-v4L" customClass="HomeTableViewCell" customModule="BLOOR" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="242"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sZp-ky-v4L" id="tHi-Mf-EEu">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="242"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alita" translatesAutoresizingMaskIntoConstraints="NO" id="tZN-Um-ZXC">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="189"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="189" id="XCA-JI-7rR"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RCF-oZ-cph">
+                                                    <rect key="frame" x="51" y="197" width="334" height="37"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alita 2019 - critique sans spoil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m92-Ai-h4I">
+                                                            <rect key="frame" x="0.0" y="0.0" width="334" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="334" id="7aA-s8-3jv"/>
+                                                                <constraint firstAttribute="height" constant="21" id="xdW-tO-NJP"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="VideoCell" text="NOYSES - 25 k vues - il y a 5 heures" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CG-Mk-hiU">
+                                                            <rect key="frame" x="0.0" y="21" width="334" height="16"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="334" id="9pK-N6-sSw"/>
+                                                                <constraint firstAttribute="height" constant="16" id="TfI-Ms-JUA"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeJ-lF-eh1">
+                                                    <rect key="frame" x="396" y="197" width="15" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="15" id="dLD-Og-E6a"/>
+                                                        <constraint firstAttribute="width" constant="15" id="w2I-dR-zfm"/>
+                                                    </constraints>
+                                                    <state key="normal" image="info.circle" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="didPressInfoButton:" destination="sZp-ky-v4L" eventType="touchUpInside" id="eUl-bC-eNH"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1P-nI-qkb">
+                                                    <rect key="frame" x="5" y="195" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="QBY-EI-ph2"/>
+                                                        <constraint firstAttribute="height" constant="40" id="gg7-vi-LqY"/>
+                                                    </constraints>
+                                                    <state key="normal" image="IMG_1561"/>
+                                                    <connections>
+                                                        <action selector="didPressProfileImageButton:" destination="sZp-ky-v4L" eventType="touchUpInside" id="wA0-i3-Z3B"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="tZN-Um-ZXC" firstAttribute="leading" secondItem="tHi-Mf-EEu" secondAttribute="leading" id="AfE-TE-l2h"/>
+                                                <constraint firstAttribute="trailing" secondItem="OeJ-lF-eh1" secondAttribute="trailing" constant="3" id="Azj-bf-qzJ"/>
+                                                <constraint firstItem="tZN-Um-ZXC" firstAttribute="top" secondItem="tHi-Mf-EEu" secondAttribute="top" id="BDl-sD-tzW"/>
+                                                <constraint firstItem="OeJ-lF-eh1" firstAttribute="top" secondItem="tZN-Um-ZXC" secondAttribute="bottom" constant="8" id="FjU-30-oPk"/>
+                                                <constraint firstItem="I1P-nI-qkb" firstAttribute="leading" secondItem="tHi-Mf-EEu" secondAttribute="leading" constant="5" id="HUR-Ee-UaA"/>
+                                                <constraint firstItem="I1P-nI-qkb" firstAttribute="top" secondItem="tZN-Um-ZXC" secondAttribute="bottom" constant="6" id="LOh-bO-GdX"/>
+                                                <constraint firstItem="RCF-oZ-cph" firstAttribute="leading" secondItem="I1P-nI-qkb" secondAttribute="trailing" constant="6" id="Mhi-Ai-01R"/>
+                                                <constraint firstAttribute="trailing" secondItem="tZN-Um-ZXC" secondAttribute="trailing" id="rRK-n6-mhX"/>
+                                                <constraint firstItem="RCF-oZ-cph" firstAttribute="top" secondItem="tZN-Um-ZXC" secondAttribute="bottom" constant="8" id="zC9-2s-4hh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageOfPodcastsImageView" destination="tZN-Um-ZXC" id="aJz-cy-3XO"/>
+                                            <outlet property="infoButton" destination="OeJ-lF-eh1" id="bl9-fo-BA9"/>
+                                            <outlet property="infosLabel" destination="7CG-Mk-hiU" id="gki-O9-Yrn"/>
+                                            <outlet property="profileImageButton" destination="I1P-nI-qkb" id="jR2-Ov-k0D"/>
+                                            <outlet property="titleLabel" destination="m92-Ai-h4I" id="Y1q-W3-IJD"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="guX-5o-1qT" firstAttribute="leading" secondItem="bie-vf-Caf" secondAttribute="leading" id="1Yb-QR-vwH"/>
+                            <constraint firstItem="guX-5o-1qT" firstAttribute="top" secondItem="V61-Mj-3KI" secondAttribute="top" id="Po9-KW-mDQ"/>
+                            <constraint firstAttribute="bottom" secondItem="guX-5o-1qT" secondAttribute="bottom" id="cUh-zX-Fu3"/>
+                            <constraint firstItem="guX-5o-1qT" firstAttribute="trailing" secondItem="bie-vf-Caf" secondAttribute="trailing" id="gsd-WO-Alh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bie-vf-Caf"/>
+                    </view>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="GTI-7R-iH8">
+                        <rightBarButtonItems>
+                            <barButtonItem image="person.circle.fill" catalog="system" style="plain" id="c1q-vI-SkN">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="didPressProfileItemButton:" destination="7lx-xf-NvF" id="mRA-dm-mjs"/>
+                                    <segue destination="dTY-xn-2ps" kind="presentation" modalPresentationStyle="fullScreen" id="rrf-IH-BV4"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="magnifyingglass" catalog="system" style="plain" id="Akc-2I-Pkn">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="didPressSearchItemButton:" destination="7lx-xf-NvF" id="ZEE-jj-6vc"/>
+                                    <segue destination="0Ch-9b-NGn" kind="presentation" modalPresentationStyle="fullScreen" id="QLT-Lj-POB"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="mic.fill" catalog="system" style="plain" id="xSc-2a-gfq">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="didPressMicItemButton:" destination="7lx-xf-NvF" id="KEj-Mc-7g4"/>
+                                    <segue destination="Oac-eO-x7r" kind="presentation" modalPresentationStyle="fullScreen" id="MMh-bB-ts9"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="micItemButton" destination="xSc-2a-gfq" id="4Dz-Pf-V9B"/>
+                        <outlet property="profileItemButton" destination="c1q-vI-SkN" id="feR-mE-1Jv"/>
+                        <outlet property="searchItemButton" destination="Akc-2I-Pkn" id="WFe-Ad-HIl"/>
+                        <outlet property="tableView" destination="guX-5o-1qT" id="lM5-qk-LwX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EQR-W1-Xtj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1146.376811594203" y="2489.7321428571427"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="Sfe-1c-7dI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="K8o-wH-Gov" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="mrN-ng-uK3"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7PR-2h-AR5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7lx-xf-NvF" kind="relationship" relationship="rootViewController" id="rOA-dk-U8H"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n8N-JN-55S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2209" y="2490"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="I6G-Fg-FcS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Account" id="dTY-xn-2ps" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V4l-RM-FDp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-51" y="2490"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="Zlq-Si-68R">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" id="0Ch-9b-NGn" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pCS-fd-ut7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-51" y="2399"/>
+        </scene>
+        <!--Rec-->
+        <scene sceneID="2Mg-EE-HPY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Rec" id="Oac-eO-x7r" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="egp-44-qpX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-320.28985507246381" y="1970.7589285714284"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Alita" width="1280" height="720"/>
+        <image name="IMG_1561" width="628" height="637"/>
+        <image name="house.fill" catalog="system" width="64" height="52"/>
+        <image name="info.circle" catalog="system" width="64" height="60"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+        <image name="mic.fill" catalog="system" width="54" height="64"/>
+        <image name="person.circle.fill" catalog="system" width="64" height="60"/>
+    </resources>
+</document>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kbn-4Z-eCH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="k9h-rX-pvp">
+            <objects>
+                <viewController id="BFi-ga-Afy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fag-Xx-jhU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="cBi-X9-5zu"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DlC-9N-K4U">
+                        <rightBarButtonItems>
+                            <barButtonItem image="person.circle.fill" catalog="system" style="plain" id="eg1-Ml-JUv">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="PcY-D5-JKc" kind="presentation" modalPresentationStyle="fullScreen" id="xNX-kM-UPB"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="magnifyingglass" catalog="system" style="plain" id="nyr-iC-zYg">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="V21-ng-D1K" kind="presentation" modalPresentationStyle="fullScreen" id="q1Y-Ml-Lsb"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="mic.fill" catalog="system" style="plain" id="ysI-X5-tXv">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="N0O-PG-cOk" kind="presentation" modalPresentationStyle="fullScreen" id="yaN-v1-Nd3"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qWa-Hg-qVT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-364" y="2489"/>
+        </scene>
+        <!--Rec-->
+        <scene sceneID="h4I-rI-L29">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Rec" id="N0O-PG-cOk" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GR5-FP-dYK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="501" y="2265"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="Tfp-4g-acN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" id="V21-ng-D1K" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RLG-Lu-jlA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="501" y="2359"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="ltM-qh-sbB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Account" id="PcY-D5-JKc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nqS-iT-ahp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="501" y="2488"/>
+        </scene>
+        <!--Tendances-->
+        <scene sceneID="NWz-II-mUr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kbn-4Z-eCH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tendances" image="flame.fill" catalog="system" id="FVa-i8-jj1"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qwm-Vr-S4e">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BFi-ga-Afy" kind="relationship" relationship="rootViewController" id="7Tw-AF-IEj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6x8-Yn-kg1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1225" y="2488"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="flame.fill" catalog="system" width="54" height="64"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+        <image name="mic.fill" catalog="system" width="54" height="64"/>
+        <image name="person.circle.fill" catalog="system" width="64" height="60"/>
+    </resources>
+</document>

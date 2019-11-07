@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import FirebaseDatabase
 
 final class LogInViewControler: UIViewController {
     
@@ -26,8 +25,6 @@ final class LogInViewControler: UIViewController {
     
     private let viewModel = LogInViewModel()
     
-    private var ref: DatabaseReference!
-    
     // MARK: - View life cycle
     
     override func viewDidLoad() {
@@ -35,22 +32,24 @@ final class LogInViewControler: UIViewController {
     }
     
     private func bind(to viewModel: LogInViewModel) {
-        
-        viewModel.mailText = { [weak self] text in
-            self?.mailTextField.text = text
-        }
     
-        viewModel.youDontHaveAnAccountText = { [weak self] text in
-            self?.youDontHaveAnAccountLabel.text = text
+        viewModel.navigateTo = { [weak self] screen in
+            switch screen {
+            case .alert(alertConfiguration: let configuration):
+                self?.displayAlert(with: configuration)
+            }
         }
+    }
+    
+    // MARK: - Helpers
+    
+    private func displayAlert(with configuration: AlertConfiguration) {
+        let alertVC = UIAlertController(title: configuration.title,
+                                        message: configuration.message,
+                                        preferredStyle: .alert)
         
-        viewModel.signUpText = { [weak self] text in
-            self?.signUpButton.setTitle(text, for: .normal)
-        }
-        
-        viewModel.logInText = { [weak self] text in
-            self?.logInbutton.setTitle(text, for: .normal)
-        }
+        alertVC.addAction(UIAlertAction(title: configuration.okTitle, style: .cancel, handler: nil))
+        self.present(alertVC, animated: true, completion: nil)
     }
     
     // MARK: - Actions
@@ -67,8 +66,7 @@ final class LogInViewControler: UIViewController {
        }
        
        @IBAction private func didPressLogInButton(_ sender: UIButton) {
-           viewModel.didPressLogIn()
-           self.ref = Database.database().reference()
-           self.ref.child("users").child("Name").setValue(["username": self.mailTextField.text])
+            viewModel.connectUser(mail: mailTextField.text, password: passwordTextField.text)
+        
        }
 }

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qe3-xL-JK6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ENREGISTRER-->
+        <scene sceneID="V1s-zo-1Nn">
+            <objects>
+                <viewController id="PKM-Lb-TgY" customClass="RecViewController" customModule="BLOOR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XQx-qi-lD1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zo7-Ki-Iy8">
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="BloorLogoButton"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="ZlB-hp-hqM">
+                                <rect key="frame" x="88" y="651" width="238" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3X-ty-KkK">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="Biv-HU-Afx"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="gobackward.15" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="large"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khS-hE-N8c">
+                                        <rect key="frame" x="89" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="3jO-EI-oCi"/>
+                                            <constraint firstAttribute="height" constant="60" id="4FK-JG-3aA"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="play.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50" scale="large"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vs-Mi-Ef1">
+                                        <rect key="frame" x="194" y="0.0" width="44" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="Pc3-7j-nkF"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="goforward.15" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="large"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enregistrer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDV-Qf-8Wq">
+                                <rect key="frame" x="160" y="842" width="94" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="fjh-oQ-Cq3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zs-PT-q39">
+                                <rect key="frame" x="174.5" y="776" width="65" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="EVB-iB-o4S"/>
+                                    <constraint firstAttribute="height" constant="61" id="Szv-Ky-bct"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <state key="normal" title="🔴"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYo-u7-SgM">
+                                <rect key="frame" x="0.0" y="206" width="414" height="350"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.20184075342465754" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lYo-u7-SgM" firstAttribute="top" secondItem="Xrg-8z-HUA" secondAttribute="top" constant="118" id="B5j-JK-yp2"/>
+                            <constraint firstItem="lYo-u7-SgM" firstAttribute="leading" secondItem="Xrg-8z-HUA" secondAttribute="leading" id="Bz1-KC-NDg"/>
+                            <constraint firstItem="ZDV-Qf-8Wq" firstAttribute="top" secondItem="8Zs-PT-q39" secondAttribute="bottom" constant="5" id="C00-W5-Jb1"/>
+                            <constraint firstItem="lYo-u7-SgM" firstAttribute="trailing" secondItem="Xrg-8z-HUA" secondAttribute="trailing" id="E8R-Z2-vvn"/>
+                            <constraint firstItem="ZDV-Qf-8Wq" firstAttribute="bottom" secondItem="Xrg-8z-HUA" secondAttribute="bottom" id="G7e-EI-8bV"/>
+                            <constraint firstItem="8Zs-PT-q39" firstAttribute="top" secondItem="ZlB-hp-hqM" secondAttribute="bottom" constant="65" id="aI2-T7-no0"/>
+                            <constraint firstItem="ZDV-Qf-8Wq" firstAttribute="centerX" secondItem="XQx-qi-lD1" secondAttribute="centerX" id="k44-PZ-mWZ"/>
+                            <constraint firstItem="ZlB-hp-hqM" firstAttribute="centerX" secondItem="XQx-qi-lD1" secondAttribute="centerX" id="mRp-uo-eom"/>
+                            <constraint firstItem="lYo-u7-SgM" firstAttribute="centerX" secondItem="XQx-qi-lD1" secondAttribute="centerX" id="nCK-Ki-Zc2"/>
+                            <constraint firstItem="8Zs-PT-q39" firstAttribute="centerX" secondItem="XQx-qi-lD1" secondAttribute="centerX" id="tvg-Hk-5Bo"/>
+                            <constraint firstItem="ZlB-hp-hqM" firstAttribute="top" secondItem="lYo-u7-SgM" secondAttribute="bottom" constant="95" id="z0g-kS-5TP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xrg-8z-HUA"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ENREGISTRER" id="oBJ-se-Wye">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="stop" id="gDI-Tb-iO0">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="didPressBackButton:" destination="PKM-Lb-TgY" id="i5Q-S4-fhI"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="LIVE 🔴" style="plain" id="FZG-vm-WKl">
+                            <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="backButton" destination="gDI-Tb-iO0" id="sN6-PC-dFT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gno-QJ-CqK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="573.91304347826087" y="1970.7589285714284"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Rhw-b8-exm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qe3-xL-JK6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RkA-kk-nwC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PKM-Lb-TgY" kind="relationship" relationship="rootViewController" id="Stx-Sy-9rr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GOZ-1m-wIn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-320.28985507246381" y="1970.7589285714284"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BloorLogoButton" width="149" height="149"/>
+        <image name="gobackward.15" catalog="system" width="60" height="64"/>
+        <image name="goforward.15" catalog="system" width="60" height="64"/>
+        <image name="play.fill" catalog="system" width="58" height="64"/>
+    </resources>
+</document>
