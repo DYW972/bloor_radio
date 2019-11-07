@@ -33,6 +33,9 @@
                             </barButtonItem>
                             <barButtonItem image="mic.fill" catalog="system" style="plain" id="ysI-X5-tXv">
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="N0O-PG-cOk" kind="presentation" modalPresentationStyle="fullScreen" id="yaN-v1-Nd3"/>
+                                </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
@@ -41,13 +44,21 @@
             </objects>
             <point key="canvasLocation" x="-364" y="2489"/>
         </scene>
+        <!--Rec-->
+        <scene sceneID="h4I-rI-L29">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Rec" id="N0O-PG-cOk" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GR5-FP-dYK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="501" y="2265"/>
+        </scene>
         <!--Search-->
         <scene sceneID="Tfp-4g-acN">
             <objects>
                 <viewControllerPlaceholder storyboardName="Search" id="V21-ng-D1K" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RLG-Lu-jlA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="502" y="2316"/>
+            <point key="canvasLocation" x="501" y="2359"/>
         </scene>
         <!--Account-->
         <scene sceneID="ltM-qh-sbB">
@@ -55,7 +66,7 @@
                 <viewControllerPlaceholder storyboardName="Account" id="PcY-D5-JKc" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nqS-iT-ahp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="502" y="2502"/>
+            <point key="canvasLocation" x="501" y="2488"/>
         </scene>
         <!--Tendances-->
         <scene sceneID="NWz-II-mUr">
@@ -74,7 +85,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6x8-Yn-kg1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-364" y="1794"/>
+            <point key="canvasLocation" x="-1225" y="2488"/>
         </scene>
     </scenes>
     <resources>

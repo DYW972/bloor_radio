@@ -28,7 +28,6 @@
 		91325891237083C800E3D512 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91325890237083C800E3D512 /* Account.storyboard */; };
 		913258942370883B00E3D512 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 913258922370883B00E3D512 /* Search.storyboard */; };
 		9132589823708BEC00E3D512 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9132589723708BEC00E3D512 /* HomeTableViewCell.swift */; };
-		91609DD22370C4CD002B3B9D /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91609DD12370C4CD002B3B9D /* Video.swift */; };
 		91609DD52370CF7B002B3B9D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91609DD42370CF7B002B3B9D /* ProfileViewController.swift */; };
 		9163F412236C93AF002576FF /* TopRatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9163F411236C93AF002576FF /* TopRatedViewController.swift */; };
 		9163F414236C93CB002576FF /* TopRatedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9163F413236C93CB002576FF /* TopRatedViewModel.swift */; };
@@ -43,6 +42,11 @@
 		9163F428236DB0FE002576FF /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9163F426236DB0FE002576FF /* Live.storyboard */; };
 		9163F42A236DB11D002576FF /* Subscriptions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9163F429236DB11D002576FF /* Subscriptions.storyboard */; };
 		9163F42D236DB14C002576FF /* Library.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9163F42B236DB14C002576FF /* Library.storyboard */; };
+		91A60084237366610099E568 /* Podcasts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A60083237366610099E568 /* Podcasts.swift */; };
+		91A60088237371A00099E568 /* ProfileSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A60087237371A00099E568 /* ProfileSegmentedControl.swift */; };
+		91A6008B23738DB50099E568 /* Rec.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91A6008A23738DB50099E568 /* Rec.storyboard */; };
+		91A6008E23738E5B0099E568 /* RecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A6008D23738E5B0099E568 /* RecViewController.swift */; };
+		91A6009023739AFD0099E568 /* RecViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A6008F23739AFD0099E568 /* RecViewModel.swift */; };
 		91EE5ADA2353DAF3004C8F0F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EE5AD92353DAF3004C8F0F /* SignUpViewController.swift */; };
 		91EE5ADC2353DB13004C8F0F /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EE5ADB2353DB13004C8F0F /* SignUpViewModel.swift */; };
 		91F27714236B33A100478546 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F27712236B33A100478546 /* Menu.storyboard */; };
@@ -94,7 +98,6 @@
 		91325890237083C800E3D512 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		913258932370883B00E3D512 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = BLOOR/Sources/BLOOR/Sources/Base.lproj/Search.storyboard; sourceTree = "<group>"; };
 		9132589723708BEC00E3D512 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
-		91609DD12370C4CD002B3B9D /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		91609DD42370CF7B002B3B9D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9163F411236C93AF002576FF /* TopRatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedViewController.swift; sourceTree = "<group>"; };
 		9163F413236C93CB002576FF /* TopRatedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedViewModel.swift; sourceTree = "<group>"; };
@@ -109,6 +112,11 @@
 		9163F427236DB0FE002576FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = BLOOR/Sources/BLOOR/Sources/Base.lproj/Live.storyboard; sourceTree = "<group>"; };
 		9163F429236DB11D002576FF /* Subscriptions.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Subscriptions.storyboard; sourceTree = "<group>"; };
 		9163F42C236DB14C002576FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = BLOOR/Sources/Base.lproj/Library.storyboard; sourceTree = "<group>"; };
+		91A60083237366610099E568 /* Podcasts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcasts.swift; sourceTree = "<group>"; };
+		91A60087237371A00099E568 /* ProfileSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSegmentedControl.swift; sourceTree = "<group>"; };
+		91A6008A23738DB50099E568 /* Rec.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Rec.storyboard; path = "BLOOR/Sources/Navigation Bar/Rec.storyboard"; sourceTree = SOURCE_ROOT; };
+		91A6008D23738E5B0099E568 /* RecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecViewController.swift; sourceTree = "<group>"; };
+		91A6008F23739AFD0099E568 /* RecViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecViewModel.swift; sourceTree = "<group>"; };
 		91EE5AD92353DAF3004C8F0F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		91EE5ADB2353DB13004C8F0F /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		91F27713236B33A100478546 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = BLOOR/Sources/Base.lproj/Menu.storyboard; sourceTree = "<group>"; };
@@ -263,9 +271,8 @@
 				912C0EFE2351F8E800AF51C7 /* SceneDelegate.swift */,
 				912C0F022351F8E800AF51C7 /* Main.storyboard */,
 				91F27712236B33A100478546 /* Menu.storyboard */,
-				913258922370883B00E3D512 /* Search.storyboard */,
-				91325890237083C800E3D512 /* Account.storyboard */,
-				913258952370884800E3D512 /* Menu */,
+				91A6009323739BA90099E568 /* Navigation Bar */,
+				919ED16423718D2B00B88D4C /* Tab Bar */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -273,35 +280,20 @@
 		912C0F2E2351F98500AF51C7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				91A6009223739B890099E568 /* Navigation Bar */,
+				91A6009123739B4D0099E568 /* Tab Bar */,
 				91609DD32370CF5D002B3B9D /* Profile */,
-				9163F40C236C92BD002576FF /* Home */,
-				9163F40D236C92FC002576FF /* TopRated */,
-				9163F40E236C9310002576FF /* Live */,
-				9163F40F236C932B002576FF /* Subscriptions */,
-				9163F410236C9348002576FF /* Library */,
 				9102438D2353DF30008FA9DF /* LogIn */,
 				9102438E2353DF49008FA9DF /* SignUp */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		913258952370884800E3D512 /* Menu */ = {
-			isa = PBXGroup;
-			children = (
-				9163F421236DB081002576FF /* Home.storyboard */,
-				9163F424236DB0C6002576FF /* TopRated.storyboard */,
-				9163F426236DB0FE002576FF /* Live.storyboard */,
-				9163F429236DB11D002576FF /* Subscriptions.storyboard */,
-				9163F42B236DB14C002576FF /* Library.storyboard */,
-			);
-			path = Menu;
-			sourceTree = "<group>";
-		};
 		91609DD32370CF5D002B3B9D /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				911E0118236DCFED00448920 /* Account */,
 				91609DD42370CF7B002B3B9D /* ProfileViewController.swift */,
+				91A60087237371A00099E568 /* ProfileSegmentedControl.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -312,8 +304,7 @@
 				912C0F2F2351F99C00AF51C7 /* HomeViewController.swift */,
 				912C0F312351FCA000AF51C7 /* HomeViewModel.swift */,
 				9132589723708BEC00E3D512 /* HomeTableViewCell.swift */,
-				91609DD12370C4CD002B3B9D /* Video.swift */,
-				911E0117236DCFC900448920 /* Search */,
+				91A60083237366610099E568 /* Podcasts.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -352,6 +343,59 @@
 				9163F41F236C9494002576FF /* LibraryViewModel.swift */,
 			);
 			path = Library;
+			sourceTree = "<group>";
+		};
+		919ED16423718D2B00B88D4C /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				9163F421236DB081002576FF /* Home.storyboard */,
+				9163F424236DB0C6002576FF /* TopRated.storyboard */,
+				9163F426236DB0FE002576FF /* Live.storyboard */,
+				9163F429236DB11D002576FF /* Subscriptions.storyboard */,
+				9163F42B236DB14C002576FF /* Library.storyboard */,
+			);
+			path = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		91A6008C23738E490099E568 /* Rec */ = {
+			isa = PBXGroup;
+			children = (
+				91A6008D23738E5B0099E568 /* RecViewController.swift */,
+				91A6008F23739AFD0099E568 /* RecViewModel.swift */,
+			);
+			path = Rec;
+			sourceTree = "<group>";
+		};
+		91A6009123739B4D0099E568 /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				9163F40C236C92BD002576FF /* Home */,
+				9163F40D236C92FC002576FF /* TopRated */,
+				9163F40E236C9310002576FF /* Live */,
+				9163F40F236C932B002576FF /* Subscriptions */,
+				9163F410236C9348002576FF /* Library */,
+			);
+			path = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		91A6009223739B890099E568 /* Navigation Bar */ = {
+			isa = PBXGroup;
+			children = (
+				91A6008C23738E490099E568 /* Rec */,
+				911E0117236DCFC900448920 /* Search */,
+				911E0118236DCFED00448920 /* Account */,
+			);
+			path = "Navigation Bar";
+			sourceTree = "<group>";
+		};
+		91A6009323739BA90099E568 /* Navigation Bar */ = {
+			isa = PBXGroup;
+			children = (
+				91A6008A23738DB50099E568 /* Rec.storyboard */,
+				913258922370883B00E3D512 /* Search.storyboard */,
+				91325890237083C800E3D512 /* Account.storyboard */,
+			);
+			path = "Navigation Bar";
 			sourceTree = "<group>";
 		};
 		CD8108D2ABB2045FC2F2032D /* Pods */ = {
@@ -484,6 +528,7 @@
 				9163F425236DB0C6002576FF /* TopRated.storyboard in Resources */,
 				91325891237083C800E3D512 /* Account.storyboard in Resources */,
 				9163F423236DB081002576FF /* Home.storyboard in Resources */,
+				91A6008B23738DB50099E568 /* Rec.storyboard in Resources */,
 				912C0F062351F8E900AF51C7 /* Assets.xcassets in Resources */,
 				9163F428236DB0FE002576FF /* Live.storyboard in Resources */,
 				913258942370883B00E3D512 /* Search.storyboard in Resources */,
@@ -621,10 +666,11 @@
 				911E011A236DD01800448920 /* SearchViewController.swift in Sources */,
 				912C0EFF2351F8E800AF51C7 /* SceneDelegate.swift in Sources */,
 				912C0F302351F99C00AF51C7 /* HomeViewController.swift in Sources */,
+				91A60088237371A00099E568 /* ProfileSegmentedControl.swift in Sources */,
 				911E0120236DD06400448920 /* AccountViewModel.swift in Sources */,
-				91609DD22370C4CD002B3B9D /* Video.swift in Sources */,
 				911E011C236DD04600448920 /* SearchViewModel.swift in Sources */,
 				9102438A2353DCBE008FA9DF /* LogInViewController.swift in Sources */,
+				91A60084237366610099E568 /* Podcasts.swift in Sources */,
 				9132589823708BEC00E3D512 /* HomeTableViewCell.swift in Sources */,
 				9102438C2353DCCE008FA9DF /* LogInViewModel.swift in Sources */,
 				912C0F322351FCA000AF51C7 /* HomeViewModel.swift in Sources */,
@@ -633,8 +679,10 @@
 				91609DD52370CF7B002B3B9D /* ProfileViewController.swift in Sources */,
 				911E011E236DD05700448920 /* AccountViewController.swift in Sources */,
 				91EE5ADC2353DB13004C8F0F /* SignUpViewModel.swift in Sources */,
+				91A6009023739AFD0099E568 /* RecViewModel.swift in Sources */,
 				91EE5ADA2353DAF3004C8F0F /* SignUpViewController.swift in Sources */,
 				9163F412236C93AF002576FF /* TopRatedViewController.swift in Sources */,
+				91A6008E23738E5B0099E568 /* RecViewController.swift in Sources */,
 				9163F414236C93CB002576FF /* TopRatedViewModel.swift in Sources */,
 				9163F41A236C944D002576FF /* SubscriptionsViewController.swift in Sources */,
 				9163F416236C941C002576FF /* LiveViewController.swift in Sources */,

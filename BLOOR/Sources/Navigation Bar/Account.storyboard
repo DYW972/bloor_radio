@@ -198,9 +198,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="AQw-PT-BeS">
-                                <rect key="frame" x="0.0" y="88" width="414" height="32"/>
-                                <color key="backgroundColor" red="0.76336294410000005" green="0.25092017649999998" blue="0.30979815129999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="AQw-PT-BeS" customClass="ProfileSegmentedControl" customModule="BLOOR" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88" width="414" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Rnu-pI-7MN"/>
+                                </constraints>
                                 <segments>
                                     <segment title="Acceuil"/>
                                     <segment title="Podcasts"/>
@@ -210,16 +212,15 @@
                                 </segments>
                                 <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0IP-m9-d0S">
-                                <rect key="frame" x="0.0" y="127" width="414" height="769"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3vl-EF-qDM">
+                                <rect key="frame" x="0.0" y="136" width="414" height="760"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="242" id="tHR-v1-MPO">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="242"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Acceuil" id="N95-Px-aT8">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tHR-v1-MPO" id="FvN-7Z-JQ3">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="242"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="N95-Px-aT8" id="yXs-NF-3gD">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -228,7 +229,11 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="3vl-EF-qDM" secondAttribute="bottom" id="3EJ-El-2jx"/>
+                            <constraint firstItem="3vl-EF-qDM" firstAttribute="top" secondItem="AQw-PT-BeS" secondAttribute="bottom" constant="8" id="4px-7S-N8k"/>
                             <constraint firstItem="AQw-PT-BeS" firstAttribute="trailing" secondItem="NGb-vw-Yyd" secondAttribute="trailing" id="LsK-ee-mwl"/>
+                            <constraint firstItem="3vl-EF-qDM" firstAttribute="leading" secondItem="NGb-vw-Yyd" secondAttribute="leading" id="bld-Uc-xIP"/>
+                            <constraint firstItem="3vl-EF-qDM" firstAttribute="trailing" secondItem="NGb-vw-Yyd" secondAttribute="trailing" id="ed6-wN-NHM"/>
                             <constraint firstItem="AQw-PT-BeS" firstAttribute="top" secondItem="NGb-vw-Yyd" secondAttribute="top" id="u5X-c5-jiV"/>
                             <constraint firstItem="AQw-PT-BeS" firstAttribute="leading" secondItem="NGb-vw-Yyd" secondAttribute="leading" id="wXU-Ad-4TX"/>
                         </constraints>

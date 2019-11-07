@@ -93,7 +93,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="imageOfVideoImageView" destination="tZN-Um-ZXC" id="xyI-uf-hzX"/>
+                                            <outlet property="imageOfPodcastsImageView" destination="tZN-Um-ZXC" id="aJz-cy-3XO"/>
                                             <outlet property="infoButton" destination="OeJ-lF-eh1" id="bl9-fo-BA9"/>
                                             <outlet property="infosLabel" destination="7CG-Mk-hiU" id="gki-O9-Yrn"/>
                                             <outlet property="profileImageButton" destination="I1P-nI-qkb" id="jR2-Ov-k0D"/>
@@ -132,6 +132,7 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="didPressMicItemButton:" destination="7lx-xf-NvF" id="KEj-Mc-7g4"/>
+                                    <segue destination="xYw-HH-PmQ" kind="presentation" modalPresentationStyle="fullScreen" id="hCR-FH-Z9k"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -174,6 +175,22 @@
             </objects>
             <point key="canvasLocation" x="-51" y="2490"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="xxr-Bn-xZT">
+            <objects>
+                <viewController id="j1w-pG-K3q" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aih-Ng-PiQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="nsm-br-GNO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lnb-Tz-dSU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q48-04-UbW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="566.66666666666674" y="1939.9553571428571"/>
+        </scene>
         <!--Search-->
         <scene sceneID="Zlq-Si-68R">
             <objects>
@@ -181,6 +198,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pCS-fd-ut7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-51" y="2399"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="L11-2q-oIf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xYw-HH-PmQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RwA-0h-bKz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="j1w-pG-K3q" kind="relationship" relationship="rootViewController" id="aeA-yU-MXI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x7V-22-zMw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-343.47826086956525" y="1939.9553571428571"/>
         </scene>
     </scenes>
     <resources>

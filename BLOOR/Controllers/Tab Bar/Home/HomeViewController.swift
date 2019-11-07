@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 final class HomeViewController: UIViewController {
     
     // MARK: - Outlets
@@ -21,7 +20,7 @@ final class HomeViewController: UIViewController {
     
     // MARK: - Private Properties
     
-    let videos: [Video] = Video.fetchVideo()
+    let podcast: [Podcasts] = Podcasts.fetchVideo()
         
     // MARK: - View life cycle
     
@@ -60,12 +59,9 @@ final class HomeViewController: UIViewController {
     @IBAction func didPressMicItemButton(_ sender: UIBarButtonItem) {
     }
     @IBAction func didPressSearchItemButton(_ sender: UIBarButtonItem) {
-        
     }
-    
     @IBAction func didPressProfileItemButton(_ sender: UIBarButtonItem) {
     }
-    
 }
 
 extension HomeViewController: UITableViewDataSource {
@@ -74,8 +70,8 @@ extension HomeViewController: UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "VideoCell", for: indexPath) as! HomeTableViewCell
-        let video = videos[indexPath.row]
-        cell.video = video
+        let podcasts = podcast[indexPath.row]
+        cell.podcast = podcasts
         return cell
     }
 }

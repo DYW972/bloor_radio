@@ -12,7 +12,7 @@ final class HomeTableViewCell : UITableViewCell {
     
     // MARK: - Outlets
     
-    @IBOutlet weak var imageOfVideoImageView: UIImageView!
+    @IBOutlet weak var imageOfPodcastsImageView: UIImageView!
     
     @IBOutlet weak var profileImageButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
@@ -21,16 +21,16 @@ final class HomeTableViewCell : UITableViewCell {
     
     // MARK: - Helpers
     
-    var video: Video! {
+    var podcast: Podcasts! {
         didSet {
             updateUI()
         }
     }
     
     func updateUI() {
-        imageOfVideoImageView.image = UIImage(named: video.imageOfVideo)
-        titleLabel.text = video.titleText
-        infosLabel.text = video.infoText
+        imageOfPodcastsImageView.image = UIImage(named: podcast.imageOfVideo)
+        titleLabel.text = podcast.titleText
+        infosLabel.text = podcast.infoText
     }
     
     // MARK: - Actions
